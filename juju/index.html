@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos</title>
+  <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
+
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: linear-gradient(to bottom, rgba(255, 2, 255, 0.723), rgb(190, 0, 190), rgb(116, 0, 116));
+    }
+
+    h1{font-family: 'https://fonts.googleapis.com/css2?family=Sanchez&display=swap' ;
+        color: white;
+        font-size:  0.5 cm;
+    }
+
+    .Clausulás{
+     color: black;
+     margin-top: 235px;
+       
+    
+    }
+
+    h2{ font-family:'https://fonts.googleapis.com/css2?family=Sanchez&display=swap';
+     color: white;
+    margin-left: 15px;}
+
+    p{ color: white;
+    margin-bottom: 0px;} 
+
+    ul{align-items: center;
+    font-size: 0.35cm;
+    margin-left: 150px;
+  margin-top: 15px;}
+
+li{ color: white;
+font-size: 0,30 cm;
+margin-left: 38px;
+}
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 90px;
+      
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      margin: 10px; /* Adicionado espaçamento entre os botões */
+    }
+
+    #nao {
+      background-color: #ff0000;
+      color: #ffffff;
+    }
+
+    #sim {
+      background-color: #4CAF50;
+      color: #ffffff;
+    }
+
+    h1, p {
+      margin: 10px 0;
+    }
+
+    .botões{
+        background-image: linear-gradient(to bottom, rgb(255, 2, 255), rgb(190, 0, 190), rgb(116, 0, 116));
+    }
+
+    .vazio{
+        color:  rgb(190, 0, 190);
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+   
+  </style>
+</head>
+<body>
+ 
+  <div class="container">
+    
+  
+    <h1 class="Clausulás">Termos e Condições - Renovação de Clausulás ®</h1>
+     <p>Julia Nevez Boa Noite</p> <p>Aqui Está uma série de Termos e Condições a serem aceitas nessa sua nova fase! para prosseguir, você precisa ler e concordar com as seguintes Condições e Termos...</p>  </p>
+
+    
+        <ul>
+            <h1 >1. Eu te amo Menina mais Velha:</h1>
+            <li>1.1.	 Ao concordar com os termos, permite que eu renove o contrato de amar a Julia Never Boi, tendo essa agora 16 anos. </li> <br>
+            
+               <li>1.2. Também Renova o estoque de piadas nofunny.exe que eu irei usar nessa Sua nova Fase </li><br>
+            
+            <h1>2.Concordar em Me Permitir Participar de Mais uma Fase:</h1> 
+            
+               <li>2.1. Ao Aceitar os Termos, você permitirá que eu esteja sempre com você, nos maus momentos, nos bons, nos tristes, nos alegres, em todos! </li> <br>
+
+               <li>2.2. Nem que seja só para te escutar e não falar nada, eu quero estar com você! Pode  contar comigo para contar suas fofocas, processo de edição, músicas um pouco boas...qualquer coisa!</li><br>
+            
+               <h1>3. Me Pagar a Dívida de R$2,00:</h1>
+            
+               <li>3.1. Sabemos Muito Bem que eu Venci a Disputa Mesmo com suas tentativas e práticas de ROUBO para com seu Adversário. Visto que você começou uma nova fase, que tal começa-la sem ter o nome sujo no Serasa?</li> <br>
+            
+               <li>3.2. Visto que Minha Vitória foi Absoluta no filme do dog, quero imediatamente os meus R$2,00.</li> <br>
+            
+            <h1>4. Minha Boitatá tá mais velha!:</h1>
+            
+               <li>4.1. Ambas as Partes concordam com o apelido justo e pertinentemente atribuído á Julia Neves Buteco</li> <br>
+            
+               <li>4.2. Ao aceitar os Termos, você concorda que sou detentor de todos os nomes de cobras atribuídos a você e concorda que todos eles são justos.</li>
+            
+            <h1>5. Concorda em Participar de uma Batalha épica pelo seu presente...</h1>
+            <li>5.1 Ao aceitar os Termos, iremos batalhar épicamente pela parte final do meu presente...</li> 
+
+            
+            
+        </ul>
+  
+        <h2>Você Aceita os Termos e Condições?</h2>
+        <br>
+                
+              
+              
+    <div class="Botões">
+      <button id="nao" class="button" onmousemove="desviarBotao(event)">Não</button>
+      <button id="sim" class="button" onmouseover="expandirBotao()" onmouseout="reduzirBotao()" onclick="aumentarBotao()"><a href="https://wa.me/5524981049105?text=Sim%2C+eu+estou+de+acordo+com+os+Termos+e+Condi%C3%A7%C3%B5es."  target="_blank">Sim</a></button>
+    </div>
+  </div>
+  <br>
+  <br>
+  
+
+  <script class="botões">
+    var originalX = 0;
+    var originalY = 0;
+
+    function aumentarBotao() {
+      document.getElementById('sim').style.transform = 'scale(1.2)';
+      setTimeout(function() {
+        document.getElementById('sim').style.transform = 'scale(1)';
+      }, 6000);
+    }
+
+    function desviarBotao(event) {
+      var mouseX = event.clientX;
+      var mouseY = event.clientY;
+
+      var raioNao = 70;
+      var distanciaMinima = 90; // 3 cm em pixels
+
+      var botaoNao = document.getElementById('nao');
+      var botaoSim = document.getElementById('sim');
+
+      var naoRect = botaoNao.getBoundingClientRect();
+      var simRect = botaoSim.getBoundingClientRect();
+
+      // Verifica se o mouse está próximo ao botão "Não"
+      if (
+        mouseX + distanciaMinima > naoRect.left &&
+        mouseX - distanciaMinima < naoRect.right &&
+        mouseY + distanciaMinima > naoRect.top &&
+        mouseY - distanciaMinima < naoRect.bottom
+      ) {
+        // Calcula o deslocamento para escapar eficientemente do mouse
+        var deltaX = mouseX - naoRect.left - naoRect.width / 2;
+        var deltaY = mouseY - naoRect.top - naoRect.height / 2;
+
+        var distancia = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+        if (distancia < raioNao) {
+          // Move o botão "Não" para fora da área acessível pelo mouse
+          var direcaoX = deltaX / distancia;
+          var direcaoY = deltaY / distancia;
+
+          var deslocamentoX = direcaoX * (raioNao + distanciaMinima);
+          var deslocamentoY = direcaoY * (raioNao + distanciaMinima);
+
+          botaoNao.style.transform = 'translate(' + deslocamentoX + 'px, ' + deslocamentoY + 'px)';
+        }
+      }
+    }
+
+    function expandirBotao() {
+      document.getElementById('sim').style.transform = 'scale(1.2)';
+    }
+
+    function reduzirBotao() {
+      document.getElementById('sim').style.transform = 'scale(1)';
+    }
+  </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2>(Infelizmente, impossibilitei que o botão de "NÃO" seja clicado ❤️)</h2>
+  <br>
+  
+
+  <footer>
+    <p class="vazio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum, cupiditate tempore laboriosam aliquam ea error consequatur nam explicabo ut? Excepturi error vitae molestias hic veritatis fugiat amet neque voluptates?</p>
+  </footer>
+
+</body>
+</html>
